@@ -1,0 +1,632 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+   }
+   
+   h1, h2, h3, h4, h5 {
+     font-family: "Montserrat";
+     font-weight: bold;
+   }
+   h6 {
+     font-family: "Montserrat";
+     color: #6B728E;
+   }
+   
+   p {
+     color: grey;
+   }
+   
+   i {
+     display: block;
+   }
+   
+   /* Container */
+   .container-fluid {
+     padding: 1.5% 8% 0.2%;
+   }
+   
+   /* Sections */
+   .colored-section {
+     background-color: black;
+     color: white;
+   }
+   
+   .footer-section {
+     background-color: #EAEAEA;
+   }
+   .bestseller-section {
+     background-color: antiquewhite;
+   }
+   
+   /* Title section */
+   
+   /* Headings */
+   
+   .big-heading {
+     padding: 0 1rem 0;
+     color: white;
+     font-size: 3.5rem;
+     font-weight: 900;
+     line-height: 1.5;
+     width: 100%;
+     height: 500px;
+     background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/thai-aos-en-banner-hero-20160202?wid=1440&hei=689&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=0");
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .section-heading {
+     font-size: 3rem;
+     line-height: 1.5;
+   }
+   
+   /* Navigation-Bar */
+   .navbar {
+     padding:0 0 1.5rem;
+   }
+   
+   .nav-item {
+     padding: 0 20px 0;
+   }
+   .nav-item-new {
+     margin: 0 10px 0 10px;
+     padding: 0 10px 0 10px ;
+   }
+    .nav-link {
+      font-size: 1.2rem;
+      font-family: "Montserrat-light", sans-serif;
+      color: white;
+    }
+   
+    .nav-link-new {
+     padding: 10px 0;
+     font-size: 1.2rem;
+     font-family: "Montserrat-light", sans-serif;
+     text-decoration: none;
+     display: block;
+     color: white;
+   
+   
+   }
+   
+    /* Buttons */
+   
+    .contact-button {
+      margin: 5% 3% 5% 0;
+    }
+   
+    /* Image */
+    .title-image {
+      width: 60%;
+      transform: rotate(25deg);
+      position: absolute;
+      right: 30%;
+    }
+   
+    .image-container {
+      position: relative;
+    }
+   
+    .iphone-pic {
+     height: 200px;
+     width: 270px;
+    }
+    .iphone14pro-pic{
+     height: 200px;
+     width: 270px;
+    }
+    .iphonese2-pic {
+     height: 200px;
+     width: 200px;
+    }
+    .macbookhome-pic {
+     height: 200px;
+     width: 270px;
+    }
+    .macbook-pic {
+     height: 220px;
+     width: 270px;
+    }
+    .macbookpro-pic {
+     height: 220px;
+     width: 270px;
+    }
+   
+    .ipadhome-pic {
+     height: 200px;
+     width: 150px;
+    }
+    .ipad-pic {
+     height: 250px;
+     width: 150px;
+    }
+   
+    .ipadpro-pic {
+     height: 250px;
+     width: 100px;
+    }
+    .applewatch-pic {
+     height: 200px;
+     width: 150px;
+    }
+     .airpodspro-pic {
+     height: 200px;
+     width: 150px;
+    }
+   
+    .airpodsprohome-pic {
+     height: 200px;
+     width: 150px;
+    }
+   
+    .airpods-pic {
+     height: 300px;
+     width: 150px;
+    }
+   
+    .bestseller-pic {
+     height: 150px;
+     width: 200px;
+     border:5px solid #393E46;
+     border-radius: 25px;
+    }
+   
+   
+    /* Product Page */
+   
+    /* Best-Sellers */
+   
+   .bestseller {
+     padding: 50px 0 0 0 ;
+   }
+   
+    /*--- section product ---*/
+   .product-mac {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px 0;
+     cursor: pointer;
+   }
+   
+   .product-mac h3 {
+     font-size: 2rem;
+     font-weight: bold;
+     margin : 20px 0;
+     padding: 30px 0;
+   }
+   .container {
+     width: 1070px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+   }
+   a {
+     text-decoration: none;
+     color: black;
+   }
+   .grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 15px;
+   
+   }
+   .grid-product {
+     background: #f1f1f1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: .5s;
+   
+   }
+   .grid-product:hover {
+     background: #e1e1e1;
+   }
+   .grid-product img {
+     width: 300px;
+   
+   }
+   .grid-detail {
+     margin: 20px 0;
+     text-align: center;
+   
+   }
+   .grid-detail p:last-child {
+     transition: .5s;
+     margin-top: 10px;
+   
+   }
+   .grid-product:hover > .grid-detail p:last-child {
+     color: #3498db;
+   }
+   
+   
+   
+   
+   
+   /*Pricing Section */
+   
+   #product {
+     padding: 100px;
+   }
+   
+   .product-text {
+     font-size: 3rem;
+     line-height: 1.5;
+   }
+   
+   .product-column {
+     padding: 3% 2%;
+   }
+   
+   /* Call to Action */
+   
+   .cta-heading {
+     font-family: "Montserrat", sans-serif;
+     font-size: 3.5rem;
+     line-height: 1.5;
+     font-weight: bold;
+   }
+   
+   /*Footer*/
+   
+   #footer {
+     color: grey;
+   }
+    .footer-image {
+      margin: 20px 10px;
+    }
+   
+   /* Media-Query */
+   
+   @media (max-width: 1028px) {
+     #title {
+       text-align: center;
+     }
+   }
+   
+   
+   
+   /* Product Details Page */
+   
+   /* Image */
+   
+   .item-photo{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+   
+   }
+   
+   /* Main Details */
+   
+   .title-attr{
+     color:black;
+   }
+   
+   .title-price{
+     margin:30px 0 20px;
+     color: grey;
+   }
+   .color-title{
+     margin: 15px 0 15px 0;
+     color: black;
+   }
+   .color1{
+     margin: 0 0 0 44%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#6B728E;
+   }
+   .color2{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#FFD384;
+   }
+   .color3{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#7743DB;
+   }
+   .color4{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#393E46;
+   }
+   .color5{
+     margin: 0 0 0 42.5%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#8BBCCC;
+   }
+   .color6{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#B1AFFF;
+   }
+   .color7{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:black;
+   }
+   .color8{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#FFFAD7;
+   }
+   .color9{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#E0144C;
+   }
+   .color10{
+     margin: 0 0 0 46%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:black;
+   }
+   .color11{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#FFFAD7;
+   }
+   .color12{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#E0144C;
+   }
+   .color13{
+     margin: 0 0 0 47.5%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#393E46;
+   }
+   .color14{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#EEEEEE;
+   }
+   
+   .color15{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#FDFF00;
+   }
+   .color16{
+     margin: 0 0 0 44%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+     width:25px;
+     background-color:#FF8FB1;
+   }
+   
+   .storage1{
+     margin: 0 0 0 42%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage2{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage3{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage4{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage5{
+     margin: 0 0 0 43%;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage6{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   .storage7{
+     margin: 0;
+     cursor:pointer;
+     margin-right:5px;
+     height:20px;
+     font-size:10px;
+     padding:2px;
+     border:2px solid black;
+     border-radius:2px;
+   }
+   
+   
+     /* More Details */
+   
+     ul > li{
+       margin-right:25px;
+       font-weight:lighter;
+       cursor:pointer;
+       text-align: left;
+     }
+   
+   .menu-items{
+     list-style-type:none;
+     font-size:11px;
+     display:inline-flex;
+     margin:20px 0 0 0;
+   }
+   .btn-success{
+     width:100%;
+     border-radius:0;
+     padding: 15px 0 15px;
+   }
+   .section{
+     width:100%;
+     margin-left:-15px;
+     padding:2px 15px 15px;
+     background:#EEEEEE;
+   }
+   .more-details {
+     width:100%;
+     border-top:1px solid silver
+   }
+   
+   div.section > div {
+     width:100%;
+     display:inline-flex;
+   }
+   div.section > div > input {
+   
+     padding-left:5px;
+     font-size:10px;
+     padding-right:5px;
+     max-width:50%;
+     text-align:center;
+     margin: 0 0 0 44%;
+     border: 2px solid black;
+   }
+   

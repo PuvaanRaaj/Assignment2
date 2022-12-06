@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/allproductdetails.css" />
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.js"
+    ></script>
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="js/allproductdetails.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div class="logo">
+          <a href="#"><i class="fa-brands fa-apple"></i></a>
+        </div>
+      </div>
+
+      <div class="navbar-container">
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <a href="allproductpage.htm">Products</a>
+          <a href="allproductpage.html#bestseller">Best-Sellers</a>
+          <a href="index.html#cta">Contact US</a>
+          <a href=""><i class="fas fa-search"></i></a>
+        </div>
+
+        <!--CART-->
+        <div id="cart-info" class="nav-info cart-info">
+          <span class="cart-info__icon"
+            ><i class="fas fa-shopping-cart"></i
+          ></span>
+          <p><span id="item-count">0 </span> items</p>
+        </div>
+
+        <section class="cart" id="cart">
+          <h1 class="section-header">CART</h1>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">RM 0</span>
+          </div>
+
+          <div class="cart-total-discount">
+            <strong class="cart-total-title">Discount Rate</strong>
+            <span class="cart-total-discount-rate">0%</span>
+          </div>
+          <div class="cart-total-postage">
+            <strong class="cart-total-title">Postage Fee</strong>
+            <span class="cart-total-postage-price">RM 0</span>
+          </div>
+
+          <div class="cart-total-discount-price">
+            <strong class="cart-total-title">Total Price After Discount</strong>
+            <span class="cart-total-price-discount">RM 0</span>
+          </div>
+
+          <button class="btn btn-primary btn-purchase" type="button">
+            PURCHASE
+          </button>
+        </section>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <p class="title" id="title">All Products</p>
+    </div>
+
+    <div id="filterButtons">
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('iphone')">iPhone</button>
+      <button class="btn" onclick="filterSelection('ipad')">iPad</button>
+      <button class="btn" onclick="filterSelection('mac')">Macbook</button>
+      <button class="btn" onclick="filterSelection('watch')">
+        Apple Watch
+      </button>
+      <button class="btn" onclick="filterSelection('airpod')">Airpods</button>
+    </div>
+
+    <section class="container" id="iphone">
+      <div class="products">
+        <div class="product iphone">
+          <img src="images/iphone_pic.jpeg" class="product__image" />
+          <a href="iphone/iphone14promax.html"
+            ><h5 class="product-title">iPhone 14 Pro Max</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 5699</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product iphone">
+          <img src="images/iphone14pro.png" class="product__image" />
+          <a href="iphone/iphone14.html"
+            ><h5 class="product-title">iPhone 14</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 4199</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product iphone">
+          <img src="images/iphonese2.jpeg" class="product__image" />
+          <a href="iphone/iphonese2.html"
+            ><h5 class="product-title">iPhone SE 2</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 2249</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="ipad">
+      <div class="products">
+        <div class="product ipad">
+          <img src="images/ipadpro2022.jpeg" class="product__image" />
+          <a href="ipad/ipadpro.html"
+            ><h5 class="product-title">iPad Pro</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 5399</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product ipad">
+          <img src="images/ipad2022.jpeg" class="product__image" />
+          <a href="ipad/ipad.html"><h5 class="product-title">iPad</h5></a>
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 2099</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product ipad">
+          <img src="images/ipadmini2022.jpg" class="product__image" />
+          <a href="ipad/ipadmini.html"
+            ><h5 class="product-title">iPad Mini</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 2399</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="mac">
+      <div class="products">
+        <div class="product mac">
+          <img src="images/macbook16inch.jpeg" class="product__image" />
+          <a href="mac/mac16.html"
+            ><h5 class="product-title">Macbook Pro 16 inch</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 10799</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product mac">
+          <img src="images/macbook14inch.jpeg" class="product__image" />
+          <a href="mac/mac14.html"
+            ><h5 class="product-title">Macbook Pro 14 inch</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 8799</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product mac">
+          <img src="images/macbook13inch.jpeg" class="product__image" />
+          <a href="mac/mac13.html"
+            ><h5 class="product-title">Macbook Pro 13 inch</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 5699</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="applewatch">
+      <div class="products">
+        <div class="product watch">
+          <img src="images/applewatchultra.jpeg" class="product__image" />
+          <a href="applewatch/applewatchultra.html"
+            ><h5 class="product-title">Apple Watch Ultra</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 3799</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product watch">
+          <img src="images/applewatchseries8.jpeg" class="product__image" />
+          <a href="applewatch/applewatch8.html"
+            ><h5 class="product-title">Apple Watch 8</h5>
+          </a>
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 1899</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product watch">
+          <img src="images/applewatchse2.webp" class="product__image" />
+          <a href="applewatch/applewatchse.html"
+            ><h5 class="product-title">Apple Watch SE 2</h5></a
+          >
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 1099</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="airpods">
+      <div class="products">
+        <div class="product airpod">
+          <img src="images/airpodsmax.jpeg" class="product__image" />
+          <a href=""><h5 class="product-title">Airpods Max</h5></a>
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 2499</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product airpod">
+          <img src="images/airpodspro2.jpeg" class="product__image" />
+          <a href=""><h5 class="product-title">Airpods Pro 2</h5></a>
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 1099</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product airpod">
+          <img src="images/airpods3.jpeg" class="product__image" />
+          <a href=""><h5 class="product-title">Airpods 3</h5></a>
+          <div class="shop-item-details">
+            <h3 class="product__price">RM 899</h3>
+            <button class="btn btn-primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="colored-section" id="testimonials">
+      <h2>Best-Sellers</h2>
+
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">
+              Shop for all the latest iPhone models: iPhone 14 lineup, iPhone SE
+              2, iPhone 13 and 13 mini, and more.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/iphone_pic.jpg"
+              alt="iPhone 14 Pro Max pic"
+            />
+            <a href="#iphone"><em>iPhone</em></a>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              Shop for all the latest Mac models: MacBook Pro, MacBook Air,
+              iMac, Mac mini and more.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/macbook16inch.jpeg"
+              alt="Macbook pic"
+            />
+            <a href="#mac"><em>Mac</em></a>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              featuring the all-new iPad and iPad mini, and the powerful iPad
+              Pro and iPad Air.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/ipad2022.jpeg"
+              alt="iPad Pic"
+            />
+            <a href="#ipad"><em>iPad</em></a>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="footer">
+      <div class="container-fluid">
+        <i class="footer-image fa-brands fa-twitter"></i>
+        <i class="footer-image fa-brands fa-facebook"></i>
+        <i class="footer-image fa-brands fa-instagram"></i>
+        <i class="footer-image fa-solid fa-envelope"></i>
+        <p>© Copyright Puvaan Raaj</p>
+      </div>
+    </footer>
+
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("product");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arrl, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("filterButtons");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[1].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>
